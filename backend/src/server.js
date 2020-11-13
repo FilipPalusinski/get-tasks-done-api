@@ -27,3 +27,5 @@ const addUser = async (req, res) => {
   const { name, password, email } = req.body;
   await User.create({ username: name, email, password });
 };
+
+start();
